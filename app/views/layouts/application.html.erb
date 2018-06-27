@@ -5,11 +5,24 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" type="text/css">
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <header>
+        <a href="/"><img src="assets/boomdenhaag.svg" %></a>
+      </header>
+      <ul class="menu">
+        <li>
+          <a href="/">Whoami</a>
+        </li>
+      </ul>
+      <div class="content">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

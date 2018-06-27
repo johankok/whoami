@@ -10,6 +10,195 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+.menu {
+  display: flex;
+  background: #094fa3;
+  list-style-type: none;
+  padding: 0 0 0 0px; }
+  .menu li a {
+    position: relative;
+    display: block;
+    padding: 12px 40px 12px 40px;
+    border-right: 1px solid #3a72b5;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-decoration: none; }
+    .menu li a.subs {
+      padding: 12px 55px 12px 40px; }
+      .menu li a.subs:before {
+        position: absolute;
+        top: 13px;
+        right: 21px;
+        content: '\f107';
+        font-family: 'FontAwesome';
+        font-size: 18px; }
+
+.list > a, .list > div {
+  padding: 10px 10px 40px 10px;
+  margin: 0 -10px; }
+.list > a {
+  color: #094fa3;
+  display: block;
+  clear: both;
+  flex: auto; }
+  .list > a:hover {
+    background-color: #F6F6F6;
+    transition: all 1s ease; }
+  .list > a img {
+    float: right; }
+.list h2 {
+  margin-top: 0;
+  font-weight: 200; }
+.list h3, .list h4 {
+  font-weight: 200;
+  color: #222; }
+.list p {
+  color: #666; }
+.list img {
+  display: flex;
+  margin: 0 30px 0 0;
+  border: 1px solid #ddd; }
+
+.publication img {
+  margin: 0 0 30px 30px;
+  border: 1px solid #ddd; }
+.publication b {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  color: #333; }
+
+table {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%; }
+  table caption {
+    font-weight: bold;
+    border-bottom: 1px solid #094fa3;
+    text-align: left; }
+  table td:first-child {
+    font-style: italic; }
+
+form .field {
+  margin-bottom: 20px;
+  overflow: hidden; }
+form label {
+  display: block;
+  font-size: 15px;
+  text-transform: lowercase;
+  color: #444;
+  margin-left: 10px;
+  margin-bottom: 0px; }
+form input[type=text] {
+  color: #333;
+  clear: both;
+  font-size: 25px;
+  padding: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+form textarea {
+  color: #333;
+  clear: both;
+  font-size: 25px;
+  padding: 10px;
+  width: 100%;
+  height: 250px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+body {
+  background-color: #F0F0F0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  color: #094fa3;
+  font-weight: 200; }
+
+h2, h3 {
+  color: #094fa3;
+  font-weight: 200; }
+
+p {
+  font-weight: 200;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-bottom: 10px; }
+
+header {
+  padding: 40px 40px 10px 40px; }
+  header img {
+    height: 60px; }
+  header a.shop {
+    float: right; }
+
+.container {
+  margin: 20px 20px 60px 20px;
+  background-color: #FFF;
+  padding-bottom: 400px; }
+
+.content {
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.button {
+  background: none;
+  border: 1px solid orange;
+  display: inline-block;
+  background-color: orange;
+  color: #FFF;
+  padding: 5px 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  -webkit-appearance: none; }
+
+.brands h2, .contact h2 {
+  margin-bottom: 0;
+  font-weight: 400; }
+.brands p, .contact p {
+  margin-top: 0;
+  width: 70%; }
+
+.flexie-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px -15px; }
+  .flexie-container .flexie {
+    margin: 15px;
+    flex: 1 1 auto;
+    background-color: #08A35D;
+    text-align: center;
+    font-size: 36px;
+    color: white; }
+    .flexie-container .flexie:first-child {
+      background-color: #0682A3; }
+    .flexie-container .flexie:last-child {
+      background-color: #4DBD8A; }
+    .flexie-container .flexie a {
+      padding: 50px 0;
+      text-decoration: none;
+      display: block;
+      color: inherit;
+      width: 100%;
+      height: 50px;
+      vertical-align: middle; }
