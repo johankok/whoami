@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class HostnamesControllerTest < ActionDispatch::IntegrationTest
-
   setup do
     @hostname = Socket.gethostname
   end
