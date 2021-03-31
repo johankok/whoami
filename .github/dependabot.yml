@@ -1,10 +1,18 @@
 version: 2
 updates:
-- package-ecosystem: bundler
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-  allow:
-  - dependency-type: direct
-  - dependency-type: indirect
+
+  # Maintain dependencies for Bundler
+  - package-ecosystem: bundler
+    directory: "/"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    allow:
+    - dependency-type: direct
+    - dependency-type: indirect
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: daily
