@@ -1,0 +1,9 @@
+.bundle
+.containerignore
+.git*
+config/master.key
+Containerfile
+doc/*
+log/*
+README.md
+tmp/*
