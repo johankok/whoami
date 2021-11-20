@@ -1,0 +1,23 @@
+name: Build Image using Containerfile
+
+on:
+   push:
+     branches: [ main ]
+   pull_request:
+     branches: [ main ]
+
+jobs:
+  build:
+    name: Build image
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Buildah Action
+      uses: redhat-actions/buildah-build@v2
+      with:
+        image: whoami
+        tags: v1 ${{ github.sha }}
+        containerfiles: |
+          ./Containerfile
