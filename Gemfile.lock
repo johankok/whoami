@@ -82,6 +82,7 @@ GEM
       irb (>= 1.3.6)
       reline (>= 0.2.7)
     erubi (1.10.0)
+    ffi (1.15.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.8.11)
@@ -146,14 +147,30 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
+    sprockets (4.0.2)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
+    sprockets-rails (3.4.1)
+      actionpack (>= 5.2)
+      activesupport (>= 5.2)
+      sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
     stimulus-rails (0.7.3)
       rails (>= 6.0.0)
     thor (1.1.0)
+    tilt (2.0.10)
     turbo-rails (0.9.0)
       rails (>= 6.0.0)
     tzinfo (2.0.4)
@@ -185,6 +202,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   puma (~> 5.0)
   rails (~> 7.0.0.rc1)
+  sassc-rails (~> 2.1)
   selenium-webdriver
   sqlite3 (~> 1.4)
   stimulus-rails (>= 0.4.0)
@@ -194,4 +212,4 @@ DEPENDENCIES
   webdrivers
 
 BUNDLED WITH
-   2.2.29
+   2.2.32
