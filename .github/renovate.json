@@ -1,8 +1,11 @@
 {
-  "enabled": true,
+  "extends": [
+    "config:base", ":disableDependencyDashboard"
+  ],
   "enabledManagers": ["ruby-version"],
+  "dockerfile": {
+    "fileMatch": ["Containerfile"]
+  },
   "timezone": "Europe/Amsterdam",
-  "schedule": [
-	  "before 9am on Tuesday"
-  ]
+  "schedule": ["after 8am every tuesday"]
 }
