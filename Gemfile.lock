@@ -87,7 +87,6 @@ GEM
     debug (1.6.2)
       irb (>= 1.3.6)
       reline (>= 0.3.1)
-    digest (3.1.0)
     erubi (1.11.0)
     ffi (1.15.5)
     globalid (1.0.0)
@@ -114,10 +113,8 @@ GEM
     mini_mime (1.1.2)
     minitest (5.16.3)
     msgpack (1.6.0)
-    net-imap (0.2.3)
-      digest
+    net-imap (0.3.1)
       net-protocol
-      strscan
     net-pop (0.1.2)
       net-protocol
     net-protocol (0.1.3)
@@ -189,7 +186,6 @@ GEM
     sqlite3 (1.5.3-x86_64-linux)
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
-    strscan (3.0.4)
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.0)
