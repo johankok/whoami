@@ -9,7 +9,7 @@ ENV APP_GROUP appgroup
 ENV RAILS_ENV production
 ENV RAILS_LOG_TO_STDOUT true
 
-RUN addgroup -S $APP_GROUP && adduser -S -s /sbin/nologin -G $APP_GROUP $APP_USER
+RUN addgroup -S $APP_GROUP && adduser -S -s /sbin/nologin -G $APP_GROUP $APP_USER && mkdir ${APP_PATH} && chown -R ${APP_USER}:${APP_GROUP} ${APP_PATH}
 
 USER $APP_USER
 WORKDIR $APP_PATH
