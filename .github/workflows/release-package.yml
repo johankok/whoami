@@ -23,14 +23,14 @@ jobs:
         containerfiles: |
           ./Containerfile
 
-    - name: Log in to the GitHub Container registry
+    - name: Log in to the Quay.io Container registry
       uses: redhat-actions/podman-login@v1
       with:
         registry: ${{ env.REGISTRY }}
         username: johankok+github_actions
         password: ${{ secrets.REGISTRY_PASSWORD }}
 
-    - name: Push to GitHub Container Repository
+    - name: Push to Quay.io Container Repository
       id: push-to-ghcr
       uses: redhat-actions/push-to-registry@v2
       with:
