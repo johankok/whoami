@@ -167,7 +167,7 @@ GEM
     regexp_parser (2.8.1)
     reline (0.3.6)
       io-console (~> 0.5)
-    rexml (3.2.5)
+    rexml (3.2.6)
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
