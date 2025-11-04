@@ -143,7 +143,7 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
-    nio4r (2.7.4)
+    nio4r (2.7.5)
     nokogiri (1.18.10-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.18.10-x86_64-linux-gnu)
@@ -155,7 +155,7 @@ GEM
       date
       stringio
     public_suffix (5.0.4)
-    puma (7.0.4)
+    puma (7.1.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.4)
@@ -271,7 +271,7 @@ DEPENDENCIES
   debug (>= 1.0.0)
   importmap-rails (>= 0.3.4)
   jbuilder (~> 2.14)
-  puma (~> 7.0)
+  puma (~> 7.1)
   rails (~> 7.2.2)
   sassc-rails (~> 2.1)
   selenium-webdriver
