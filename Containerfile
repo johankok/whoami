@@ -1,4 +1,4 @@
-FROM ruby:3.4.8-alpine AS build
+FROM ruby:4.0.1-alpine AS build
 
 RUN apk add --no-cache --update build-base sqlite-dev tzdata
 
@@ -25,7 +25,7 @@ RUN bundle config set deployment 'true' \
 COPY --chown=$APP_USER:$APP_GROUP . $APP_PATH
 RUN rm config/credentials.yml.enc && EDITOR=/bin/true bundle exec rails credentials:edit && bundle exec rake assets:precompile
 
-FROM ruby:3.4.8-alpine
+FROM ruby:4.0.1-alpine
 
 RUN apk add --no-cache --update sqlite-libs tzdata
 
