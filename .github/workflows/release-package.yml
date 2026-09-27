@@ -12,7 +12,7 @@ jobs:
       REGISTRY: quay.io/johankok
 
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
 
     - name: Buildah Action
       id: build-image
