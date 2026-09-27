@@ -16,7 +16,9 @@
     }
   ],
   "dockerfile": {
-    "fileMatch": ["Containerfile"]
+    "managerFilePatterns": [
+      "/Containerfile/"
+    ]
   },
-  "schedule": ["after 8am every tuesday"]
+  "schedule": ["after 8am on tuesday"]
 }
