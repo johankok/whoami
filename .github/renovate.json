@@ -1,6 +1,20 @@
 {
-  "extends": ["config:base", ":disableDependencyDashboard"],
-  "enabledManagers": ["dockerfile", "ruby-version"],
+  "extends": ["config:best-practices", ":disableDependencyDashboard"],
+  "enabledManagers": ["custom.regex","dockerfile", "ruby-version"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^Containerfile$/"
+      ],
+      "matchStrings": [
+        "ARG RUBY_VERSION=(?<currentValue>.*?)\\n"
+      ],
+      "datasourceTemplate": "ruby-version",
+      "depNameTemplate": "ruby",
+      "versioningTemplate": "ruby"
+    }
+  ],
   "dockerfile": {
     "fileMatch": ["Containerfile"]
   },

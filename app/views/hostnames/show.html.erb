@@ -1,3 +1,7 @@
-<h1>Hello!</h1>
-<p>I'm running on <code><%= @hostname %></code></p>
-<p>This page is also available in <%= link_to('.json', hostname_path(format: :json)) %> format.</p>
+<div>
+  <h1 class="font-bold text-4xl mb-6"">
+      Hello!  <span class="inline-block origin-[70%_70%] motion-safe:animate-wave" role="img" aria-label="waving hand">👋</span>
+  </h1>
+  <p>I'm running on <code><%= @hostname %></code></p>
+  <p>This page is also available in <%= link_to('.json', hostname_path(format: :json)) %> format.</p>
+</div>
